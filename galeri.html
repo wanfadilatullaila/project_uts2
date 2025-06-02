@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Kegiatan - UMRI Informatika</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .galeri-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 2rem;
+      background-color: white;
+    }
+    .galeri-section img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .galeri-section img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><i class="fas fa-rocket"></i> UMRI Informatika</div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="galeri.html" class="active">Galeri</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1><i class="fas fa-images"></i> Galeri Teknik Informatika</h1>
+    <p>Kilas balik kegiatan dan momen kebersamaan mahasiswa UMRI</p>
+  </header>
+
+  <section class="galeri-section">
+    <img src="https://source.unsplash.com/400x300/?technology,classroom" alt="kelas informatika" />
+    <img src="https://source.unsplash.com/400x300/?coding,hackathon" alt="coding event" />
+    <img src="https://source.unsplash.com/400x300/?university,students" alt="mahasiswa" />
+    <img src="https://source.unsplash.com/400x300/?presentation,seminar" alt="seminar" />
+    <img src="https://source.unsplash.com/400x300/?robotics,laboratory" alt="lab robotik" />
+    <img src="https://source.unsplash.com/400x300/?group,discussion" alt="diskusi kelompok" />
+  </section>
+
+  <footer>
+    &copy; 2025 Teknik Informatika - Universitas Muhammadiyah Riau. Dirancang oleh Laila 💻
+  </footer>
+</body>
+</html>

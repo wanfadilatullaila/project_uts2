@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak Kami - UMRI Informatika</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .kontak-wrapper {
+      padding: 3rem 2rem;
+      background: white;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      justify-items: center;
+    }
+    .kontak-box {
+      background: var(--accent);
+      padding: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    .kontak-box i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .kontak-box a {
+      text-decoration: none;
+      color: var(--dark);
+      display: block;
+      margin-top: 0.5rem;
+    }
+    .kontak-box a:hover {
+      color: var(--primary);
+    }
+    .kontak-box:last-child {
+      grid-column: 1 / -1;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><i class="fas fa-rocket"></i> UMRI Informatika</div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="kontak.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1><i class="fas fa-envelope"></i> Hubungi Kami</h1>
+    <p>Kami siap menjawab pertanyaanmu. Jangan ragu untuk menghubungi!</p>
+  </header>
+
+  <section class="kontak-wrapper">
+    <div class="kontak-box">
+      <i class="fas fa-phone"></i>
+      <h3>Telepon</h3>
+      <a href="tel:+6282288016688">+62 822-8801-6688</a>
+    </div>
+    <div class="kontak-box">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <a href="mailto:informatika@umri.ac.id">informatika@umri.ac.id</a>
+    </div>
+    <div class="kontak-box">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Alamat</h3>
+      <a href="https://maps.app.goo.gl/sesuai-lokasi" target="_blank">Jl. Tuanku Tambusai, Pekanbaru</a>
+    </div>
+    <div class="kontak-box">
+      <i class="fab fa-instagram"></i>
+      <h3>Instagram</h3>
+      <a href="https://www.instagram.com/informatika.umri" target="_blank">@informatika.umri</a>
+    </div>
+    <div class="kontak-box">
+      <i class="fas fa-clock"></i>
+      <h3>Jam Layanan</h3>
+      <p>Senin–Jumat<br>08.00–16.00 WIB</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Teknik Informatika - Universitas Muhammadiyah Riau. Dirancang oleh Laila 💻
+  </footer>
+</body>
+</html>
